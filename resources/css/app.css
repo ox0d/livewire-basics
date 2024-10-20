@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Noto Naskh Arabic';
+    src: url('../fonts/NotoNaskhArabic/NotoNaskhArabic-VariableFont_wght.ttf') format('truetype');
+    font-weight: 400 700;
+    font-style: normal;
+}
+
+body {
+    @apply font-body bg-slate-800 text-slate-100 flex flex-col min-h-screen items-center justify-center;
+}
