@@ -14,6 +14,9 @@
             <textarea wire:model="content" rows="3" class="w-full p-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500
                     {{ $errors->has('content') ? 'border-red-500' : 'border-gray-300' }}"
                 placeholder="Post content"></textarea>
+            <small class="text-white">
+                <span x-text="$wire.content.split(' ').length - 1"></span>
+            </small>
             @error('content')
                 <span class="text-xs text-red-500">{{ $message }}</span>
             @enderror

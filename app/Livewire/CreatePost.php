@@ -20,7 +20,6 @@ class CreatePost extends Component
     #[Rule('min:10', message: 'Content must be more than 10!')]
     public $content;
 
-
     public function render()
     {
         return view('livewire.create-post');

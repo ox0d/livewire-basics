@@ -14,6 +14,7 @@ return new class extends Migration {
             $table->id();
             $table->string('title');
             $table->string('content');
+            $table->boolean('is_archived')->default(false);
             $table->timestamps();
         });
     }
