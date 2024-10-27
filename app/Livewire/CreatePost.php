@@ -22,6 +22,8 @@ class CreatePost extends Component
 
     public function render()
     {
+        $this->authorize('editPost');
+
         return view('livewire.create-post');
     }
 
